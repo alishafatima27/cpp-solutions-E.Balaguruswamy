@@ -27,7 +27,7 @@ float sum()
     It will truncate the decimal part. To avoid this error and ensure floating-point division, 
     we should initialize i with a double value of 1.0*/
   
-    for(double i = 2 ; terms > 0.000001*sum ; i++) 
+    for(double i = 1 ; terms > 0.000001*sum ; i++) 
     {
         // Calculate the current term: (1/i)^i
         terms = (pow(1/i,i)); // pow function defined in cmath library.
